@@ -1,0 +1,20 @@
+#title {
+	text-align: center;
+	color:white;
+	/*text-shadow:    -1px -1px 0 #000,    1px -1px 0 #000,    -1px 1px 0 #000,    1px 1px 0 #000; */
+}
+
+body{
+	background: url("../../images/backtrack.jpg");
+	background-size:100% auto;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+}
+
+.panel-default {
+	opacity: 0.9;
+	margin-top:20px;
+}
+
+.form-group.last { margin-bottom:0px; }

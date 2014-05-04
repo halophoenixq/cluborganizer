@@ -1,0 +1,188 @@
+/* Global */
+body {
+	background-color:#333333;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover{
+	cursor:pointer;
+	color: #E8E8E8 ;
+	background-color:white;
+	text-decoration:underline;
+}
+
+/* Navigation */
+
+.menu {
+	background-color:#333333;
+	box-shadow: 0px 0px 5px 4px rgba(51, 51, 51, 0.75);
+	color:#ffffff;
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:auto; 
+	z-index:100;
+	opacity:0.9;
+}
+#logo {
+	text-align: center;
+	margin: 10px 0;
+}
+#nav {
+	text-align: right;
+	margin: 30px 0 0 0;
+}
+.navigation{
+	float: right;
+	list-style: none;
+	margin: 0;
+}
+.navigation li{
+	float: left;
+	padding:0 0 0 50px;
+}
+.navigation li:hover{
+	cursor:pointer;
+	color: #E8E8E8;
+	text-decoration:underline;
+}
+
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height: auto;
+	/* height: 90vh; */
+	position: relative;
+	padding:140px 0;
+}
+
+/* Slide 1 */ 
+#slide1 {
+	background-image:url('../../images/backbrown.jpg');
+	background-size:100% auto;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+#slide1 h1 {
+	color:#fff;
+	text-shadow:    -1px -1px 0 #333,    1px -1px 0 #333,    -1px 1px 0 #333,    1px 1px 0 #333; 
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	font-weight: 700;
+}
+#slide1 h2 {
+	color:#fff;
+	text-shadow:    -1px -1px 0 #333,    1px -1px 0 #333,    -1px 1px 0 #333,    1px 1px 0 #333; 
+	font-size: 2em;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+#slide1 p{
+	font-size: 1.5em;
+	color:#fff;
+	text-shadow:    -1px -1px 0 #333,    1px -1px 0 #333,    -1px 1px 0 #333,    1px 1px 0 #333; 
+}
+
+
+
+/* Slide 2 */ 
+
+#slide2{
+	background-color:#333333;
+	color:#ffffff;
+}
+#slide2 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#ffffff;
+	font-weight: 700;
+}
+#slide2 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+div #description{
+	text-align:justify;
+	color:#ffffff;
+}
+
+/* Slide 3 */ 
+#slide3{
+	color:#fff;
+	background-image:url('../../images/goldensun.jpg');
+	background-size:100% auto;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+#slide3 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	font-weight: 700;
+}
+#slide3 h2 {
+	font-size: 2em;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+/* Slide 4*/ 
+
+#slide4{
+	background-color:#333333;
+	color:#ffffff;
+}
+#slide4 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#ffffff;
+	font-weight: 700;
+}
+#slide4 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+/* Footer */
+footer{
+	color:#ffffff;
+}
+
+#copyright{
+	text-align: center
+}
+
+footer li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+	float: right;
+}
