@@ -27,13 +27,13 @@ if(!isset($_SESSION['admin'])){
   include('connect.php');
   $event_id=$_POST['event_id'];
 
-  $query="SELECT event.NAME AS ename, EVENT_TYPE.name AS etype, location, event.DESCRIPTION AS edesc, DATE_FORMAT(start_date,'%c/%e/%Y') AS sdate, DATE_FORMAT(start_time,'%l:%i %p') AS stime, DATE_FORMAT(end_time,'%l:%i %p') AS etime ";
-  $query.= "FROM event LEFT JOIN event_type ON event.event_type_id = event_type.event_type_id WHERE event_id='$event_id'";
+  $query="SELECT EVENT.NAME AS ename, EVENT_TYPE.name AS etype, location, EVENT.DESCRIPTION AS edesc, DATE_FORMAT(start_date,'%c/%e/%Y') AS sdate, DATE_FORMAT(start_time,'%l:%i %p') AS stime, DATE_FORMAT(end_time,'%l:%i %p') AS etime ";
+  $query.= "FROM EVENT LEFT JOIN EVENT_TYPE ON EVENT.EVENT_TYPE_ID = EVENT_TYPE.event_type_id WHERE event_id='$event_id'";
   $result=mysqli_query($con,$query) or die("Query failed." . mysqli_error($con));
   $event_row=mysqli_fetch_array($result);
 
   //Sign Up Query
-  $query="SELECT * FROM signup LEFT JOIN member ON signup.member_id = member.member_id WHERE event_id='$event_id'";
+  $query="SELECT * FROM SIGNUP LEFT JOIN MEMBER ON SIGNUP.member_id = MEMBER.member_id WHERE event_id='$event_id'";
   $result=mysqli_query($con,$query) or die("Query failed." . mysqli_error($con));
 
   $suevents = "";
@@ -51,7 +51,7 @@ if(!isset($_SESSION['admin'])){
   }
 
   //Sign In Query
-  $query="SELECT * FROM signin LEFT JOIN member ON signin.member_id = member.member_id WHERE event_id='$event_id'";
+  $query="SELECT * FROM SIGNIN LEFT JOIN MEMBER ON SIGNIN.member_id = MEMBER.member_id WHERE event_id='$event_id'";
   $result=mysqli_query($con,$query) or die("Query failed." . mysqli_error($con));
 
   $sievents = "";
